@@ -1,5 +1,8 @@
+require "spec_helper"
+
 describe Student do 
-  let!(:student) { Student.new }
+  let!(:student) { Student.new("joseph","Jamach") }
+
 
   it "inherits from the User class" do
     expect(Student.superclass).to be(User) 
